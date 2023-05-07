@@ -1,0 +1,249 @@
+
+/*head of index page*/
+
+
+body{
+   margin: 0 auto;
+   padding: 0;
+   background-color: rgb(29, 28, 28);
+}
+
+/* start code of header only*/
+.block{
+   text-align: center;
+   position: relative;
+   margin: 4px auto 0;
+   width: 99%;
+   height: 80px;;
+   background: linear-gradient(0deg, rgb(0, 0, 0), rgb(59, 56, 56));
+   border-radius: 10px;
+   background-attachment: fixed;
+}
+
+.glow::before {
+   content:  ' ';
+   position: absolute;
+   left: -2px;
+   top: -2px;
+   background: linear-gradient(45deg, #e6fbe6, #ff6600,#00ffff, #ff00ff, #ff0099, #6e0dd0,#ff3300, #099fff);
+   background-size: 400%;
+   width:calc(100% + 5px);
+   height: calc(100% + 5px);
+   z-index: -1;
+}
+
+.glow::after{
+   content:  ' ';
+   position: absolute;
+   left: -2px;
+   top: -2px;
+   background: linear-gradient(45deg, #e6fbe6, #ff6600,#00ffff, #ff00ff, #ff0099, #6e0dd0,#ff3300, #099fff);
+   background-size: 400%;
+   width:calc(100% + 5px);
+   height: calc(100% + 5px);
+   z-index: -1;
+   animation: animate 20s linear infinite;
+}
+
+@keyframes animate{
+   0%{
+      background-position: 0 0;
+   }
+   50%{
+      background-position: 400% 0;
+   }
+   100%{
+      background-position: 0 0;
+   }
+
+}
+
+.glow::after{
+   filter: blur(40px);
+}
+
+span{
+   color: yellow;
+   text-align: center;
+   margin: auto;
+   position: relative;
+   font-size: 80px;
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.keen{
+   color: red;
+   font-size: 60px;
+   text-shadow: 2px 3px 4px #ffffff;
+}
+.and{
+   color: white;
+   font-size: 60px;
+   text-shadow: 2px 3px 4px #ffffff;
+}
+
+.able{
+   right: 10px;
+   top: 300px;
+   margin: auto 0;
+   color: blue;
+   font-size: 60px;
+   font-style: bold;
+   text-shadow: 2px 3px 4px #ffffff;
+}
+
+/* close code of header */
+
+
+
+
+
+/*start nav bar */
+.navbar{
+   height: 60px;
+   width: 100%;
+   list-style: none;
+   margin: .085rem;
+   display:  block;
+   position: fixed;
+   top: 80px;
+   background-color: rgb(59, 52, 52);
+  
+}
+
+.navbar a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 2rem;
+   margin: 10px;
+   text-align: right;
+   float: right;
+  
+}
+
+.navbar a:hover:before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: #00ffff;
+   z-index: -1;
+   box-shadow: 
+               0 0 5px #00ffff,
+               0 0 10px #00ffff,
+               0 0 15px #00ffff,
+               0 0 20px #00ffff,
+               0 0 25px #00ffff;
+
+   transition: 0.25s;
+}
+
+/*end navigation bar*/
+
+
+
+/* start about section*/
+.abouts{
+   color: white;
+   height: 100vh;
+   position: absolute;
+   top: 20vh;
+   margin: 8px;
+   
+}
+
+.about h1 {
+   top: 90px;
+   text-align: center;
+}
+
+.about h1 p{
+   top: 0 10x;
+   position: absolute;
+}
+
+.paragr{
+   
+   display: inline-block;
+   width: 45%;
+   margin: 02.5%;
+}
+
+.paragr:hover{
+   
+   display: inline-block;
+   width: 150px;
+   margin: 02.5%;
+}
+
+p{
+   border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        width: 300px;
+        transition: all 0.3s ease;
+}
+
+p:hover{
+   background-color: #ccc; /* change the background color on hover */
+   color: #2200ff; /* change the font color on hover */
+   border-color: #000; /* change the border color on hover */
+   width: 650px; /* increase the width on hover */
+}
+
+/*end about section*/
+
+
+/*start feedback section */
+
+.feedback{
+   color: white;
+   display: inline-block;
+   width: 45%;
+   margin: 02.5%;
+   top: 20vh;
+   position: absolute;
+   border-spacing: 0 25px;
+   border-collapse: separate;
+
+}
+
+option{
+   font-weight: normal;
+   display:  block;
+   white-space: nowrap;
+   min-height: 100rem;
+   padding: 18px;
+   
+}
+
+select{
+   background: #eee;
+   border: 1px solid #aaa;
+   border-right-color: #ddd;
+   border-bottom-color: #ddd;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+   width: 100%;
+   min-height: 30px;
+   font-weight: normal;
+}
+
+/* end feed back section */
+
+/* start form section */
+
+.info{
+   position: absolute;
+   color: white;
+   top: 25vh;
+}
+
+/* end form section */
